@@ -21,8 +21,6 @@ public class DeplacementObjets : MonoBehaviour
         
         if (transform.position.x < positionFin)
         {
-            transform.position = new Vector3(positionDebut, transform.position.y, 0);
-
             float valeurAleatoireY = Random.Range(-deplacementAleatoire, deplacementAleatoire);
 
             transform.position = new Vector2(positionDebut, valeurAleatoireY);
